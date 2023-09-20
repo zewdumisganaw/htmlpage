@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <title>Registration form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/JavaScript">
+function validate(){
+if((document.fname.fn.value=="")||(!( /^[a-zA-Z]+$/).test(document.fname.fn.value))){
+alert("Enter your first name.");
+return false;
+}
+if((document.fname.ln.value=="")||(!( /^[a-zA-Z]+$/).test(document.fname.ln.value))){
+alert("Enter your last name.");
+return false;
+}
+if(document.fname.gender.value=="select"){
+alert("select your sex");
+return false;
+}
+if((document.fname.age.value=="")||(!(/^[0-9]+$/).test(document.fname.age.value))){
+alert("You must enter valid age with in number.");
+return false;
+}
+if((document.fname.pn.value=="")||(!(/^[0-9]+$/).test(document.fname.pn.value))){
+alert("You must enter valid phone number ");
+return false;
+}
+if((document.fname.country.value=="")||(!( /^[a-zA-Z]+$/).test(document.fname.country.value))){
+alert("Enter your country");
+return false;
+}
+if((document.fname.pv.value=="")||(!( /^[a-zA-Z]+$/).test(document.fname.pv.value))){
+alert("Enter the tourist attraction place you want to visit.");
+return false;
+}
+if((document.fname.em.value=="")||(!(/.+@.+\.com$/).test(document.fname.em.value))){
+alert("You must enter valid email id with '@' and '.com'");
+return false;
+}
+else
+	alert("The data is successfully entered !!");
+}
+ </script>
+</head>
+<body>
+<div id="container">
+		<div id="header">
+		<p><img src="image/le.jpg" width="100%" height="90px"></p>
+		<!--<h1>Ethiopia's Historical & Natural Tourist Attractions</h1>-->
+		        <h6 style="margin-top:0px;font-size:15px"><a href="t3.html">Home</a>
+                <a href="t1.html" >Visited Place</a>
+				<a href="t2.html">Registration</a>
+				<a href="co.html">Contact Us</a></h6>
+		</div>
+		 <h3 style="border-top-style:solid;border-top-color:blue;border-top-width:5px;margin-top:30px;"></h3>
+			<div id="content">
+<form name="fname" action="" onsubmit="return validate();"  method="post" >
+	   <h2><i>Tourist Registration Form</i></h2><br>
+	   <fieldset>
+	  <b>First Name:</b><input type="text" name="fn" id="fname" style="margin-left:80px"><br><br>
+	  <b>Last Name:</b><input type="text" name="ln" id="lname" style="margin-left:82px"><br><br>
+	 <b>Gender:</b><select name="gender" id="gender" style="margin-left:110px">
+<option value="select">Select</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select><br><br>
+	 <b>Age:</b> <input type="text" name="age" id="age" style="margin-left:125px"><br><br>
+	  <b>Phone Number:</b><input type="text" name="pn" id="pnumber" style="margin-left:52px"><br><br>
+	  <b>Country:</b><input type="text" name="country" id="country" style="margin-left:100px"><br><br>
+	  <b>Place visit:</b><input type="text" name="pv"id="pvisit" style="margin-left:88px"><br><br>
+	  <b>Email :</b> <input type="text" name="em"  style="margin-left:110px"><br><br>
+	    <input name="reset" type="reset" value="Reset" style="margin-left:165"> &nbsp;&nbsp;&nbsp;
+  <input type="submit" value="Register" name="register" >
+ <br><br>
+</form>
+</div>
+		<div id="footer">
+<center style="color:white;font-size:30px;font-style:italic;">Copyright &copy;</center>		
+		</div>
+	</div>
+</body>
+</html>

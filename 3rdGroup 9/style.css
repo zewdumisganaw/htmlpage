@@ -1,0 +1,58 @@
+body {
+			background: #ccc url(ccc.jpg);
+			margin: 0;
+		}	
+		#header {
+			background:#036 ;
+			height: 100px;
+		}
+		#footer {
+			background: #036 url();
+			height: 50px;
+		}
+		#content 
+		{
+			border-left: solid #069;
+			background: white url() repeat-y;
+			padding: 1px 20px 1em 40px;
+		}
+		h2 
+		{
+			font-size: 2.0em;
+			color: #036;
+		}
+		
+		h3 
+		{   
+		    font-style: italic;
+			font-size: 1.25em;
+			color: red;
+		}
+		h4 
+		{   
+		    font-style: italic;
+			font-size: 25px;
+			color: white;
+		}
+		h1 
+		{
+			text-align: center;
+			color: white;
+			padding: 10px;
+		}
+		h6,a:link,a:visited{
+	font-size:20px;
+	font-style:italic;
+	 margin-left:50px;
+	 text-decoration:none;
+	 color:blue;
+	 }
+
+		#container 
+		{
+			position: relative;
+			width: 1000px;
+			border: solid #036;
+			border-width: 0 3px;
+			margin: auto;
+		}
